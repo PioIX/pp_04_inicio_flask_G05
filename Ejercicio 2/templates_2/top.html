@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Listado</title>
+{% endblock %}
+
+{% block titulo %} 
+<h2>Top 10 de los paises con mayores emisiones de CO2 totales:</h2>
+{% endblock %}
+
+{% block contenido %}
+<ol>
+    {% for fila in listado %}
+    <li>{{ fila }}</li>
+    {% endfor %}
+  </ol>
+{% endblock %}
+
+  

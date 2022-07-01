@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  {% block title %} {% endblock %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<nav>
+<a href="{{ url_for('ayuda') }}">Acerca de...</a>
+<a href="{{ url_for('listado') }}">Lista</a>
+<a href="{{ url_for('paises', pais= 'top' ) }}">TOP</a>
+<a href="{{ url_for('paises', pais='Germany') }}">Caracteristicas del pais</a>
+</nav>
+<body>
+{% block titulo %} {% endblock %}
+{% block contenido %} {% endblock %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title> Home </title>
+{% endblock %}
+
+{% block titulo %} 
+<h2>Index hacia los otros sitios del dominio:</h2>
+{% endblock %}
+
+{% block contenido %}
+<h5>  Ayuda: <a href="{{ url_for('ayuda') }}">Acerca de...</a></h5>
+<h5>  Listado: <a href="{{ url_for('listado') }}">Lista</a></h5>
+<h5>  Listado del top: <a href="{{ url_for('paises', pais= 'top' ) }}">Lista</a></h5>
+<h5>  Listado de algun pais:  <a href="{{ url_for('paises', pais= 'Germany' ) }}">Caracteristicas del pais</a></h5>
+{% endblock %}
